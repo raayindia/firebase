@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="green"> #00E517</color>
+    <color name="theamcolor"> #4835BE</color>
+    <color name="cnb_default_badge_color">#F44336</color>
+    <color name="cnb_default_unselected_color">#696969</color>
+    <color name="disabled">#858585</color>
+    <color name="home">#FF0000</color>
+    <color name="discover">#F000F0</color>
+    <color name="search">#00FF00</color>
+    <color name="settings">#0000FF</color>
+    <color name="textcolor">#1A4563</color>
+    <color name="custom_color">#1A4563</color>
+    <color name="custom_color2">#FFFFFF</color>
+    <color name="pricecard">#148CA5</color>
+    #1A4563
+    <color name="blank">#696969</color>
+    <color name="activity">#673AB7</color>
+    <color name="favorites">#E91E63</color>
+    <color name="colorTab1Selected">#FF0000</color>
+    <color name="colorTab1Unselected">#FFA500</color>
+    <color name="disabled1">#858585</color>
+    <color name="default_appcolor">#148CA5</color>
+    <color name="blue">#CCD9E4</color>
+    <color name="frag1">#D8FDFD</color>
+    <color name="frag2">#FCEEF3</color>
+    <color name="frag3">#FDF6D8</color>
+    <color name="green1">#87B68C</color>
+    <color name="discover1">#DA7FDA</color>
+    <color name="colorTab1Background">#FF5733</color>
+    <color name="colorTab2Background">#EFEFEF</color>
+    <color name="colorPrimary">#fafafa</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#ffffff</color>
+    <color name="selected_tab_color">#4894FE</color> <!-- Customize the color code -->
+    <color name="unselected_tab_color">#757F8E</color>
+    <color name="hint_color">#393737</color>
+
+    <color name="red_active">#f44336</color>
+    <color name="purple_active">#9c27b0</color>
+    <color name="blue_active">#03a9f4</color>
+    <color name="green_active">#4caf50</color>
+    <color name="blue_grey_active">#607d8b</color>
+    <color name="yellow_active">#ffeb3b</color>
+    <color name="orange_active">#ff9800</color>
+    <color name="grey_active">#9e9e9e</color>
+
+    <color name="red_inactive">#e57373</color>
+    <color name="purple_inactive">#ba68c8</color>
+    <color name="blue_inactive">#64b5f6</color>
+    <color name="green_inactive">#81c784</color>
+    <color name="blue_grey_inactive">#90a4ae</color>
+    <color name="yellow_inactive">#fff176</color>
+    <color name="orange_inactive">#ffb74d</color>
+    <color name="gery_inactive">#e0e0e0</color>
+
+    <color name="default_inactive">#78909c</color>
+
+    <color name="red_bg_light">#ffebee</color>
+    <color name="purple_bg_light">#f3e5f5</color>
+    <color name="blue_bg_light">#e3f2fd</color>
+    <color name="green_bg_light">#e8f5e9</color>
+    <color name="blue_grey_bg_light">#eceff1</color>
+    <color name="yellow_bg_light">#fffde7</color>
+    <color name="orange_bg_light">#fff3e0</color>
+    <color name="grey_bg_light">#fafafa</color>
+    <color name="primary">#536DFE</color>
+    <color name="primary_dark">#445DE4</color>
+    <color name="registerbuttoncolor">#4894FE</color>
+
+
+    <color name="accent">#F44336</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="layoutbackground">#F7FAFF</color>
+    <color name="notificationcardcolor"> #EFE2FF</color>
+
+
+
+
+</resources>

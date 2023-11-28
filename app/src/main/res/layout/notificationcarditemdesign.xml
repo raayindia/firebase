@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.4"
+        app:cardCornerRadius="14dp"
+        android:layout_marginTop="20dp"
+
+        app:cardBackgroundColor="@color/notificationcardcolor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/smallCardView"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                app:cardCornerRadius="8dp"
+                android:elevation="5dp"
+                android:layout_marginStart="23dp"
+                android:outlineAmbientShadowColor="@color/notificationcardcolor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:cardBackgroundColor="@color/notificationcardcolor"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/notifcationicon"
+                    android:layout_gravity="center"/>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Two TextViews on the right side of the small card -->
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 Schedules!"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/textcolor"
+                app:layout_constraintStart_toEndOf="@+id/smallCardView"
+                app:layout_constraintTop_toTopOf="@+id/smallCardView"
+                app:layout_constraintBottom_toTopOf="@+id/textView2"
+                android:layout_marginStart="16dp"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Check your schedule Today"
+                android:textSize="14dp"
+                android:textColor="@color/textcolor"
+                app:layout_constraintBottom_toBottomOf="@+id/smallCardView"
+                app:layout_constraintStart_toEndOf="@+id/smallCardView"
+                app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+            <!-- Your main card content goes here -->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

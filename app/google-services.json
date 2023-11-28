@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "393505432291",
+    "project_id": "raay-d3e5e",
+    "storage_bucket": "raay-d3e5e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393505432291:android:017105af8676a19e83dbd6",
+        "android_client_info": {
+          "package_name": "com.example.hospital_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393505432291-optiut945tspgmj2fbfv7nbqkms37aef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsHzhxXt3sgqi-MtXbZDYjw0S0OSkmqAE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393505432291-optiut945tspgmj2fbfv7nbqkms37aef.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

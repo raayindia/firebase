@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="19dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/cardlayout2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp">
+
+
+
+            <LinearLayout
+                android:id="@+id/invoice_Rllayout0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/invoicetxt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hedderview"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/inter_light"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:text="Invoice ID"
+                    android:textColor="#757F8E"
+
+                    android:textSize="12dp" />
+
+
+                <TextView
+                    android:id="@+id/plannametxt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hedderview"
+                    android:layout_gravity=""
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter_light"
+                    android:gravity="end"
+                    android:text="Plan Name"
+                    android:textColor="#757F8E"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/invoice_Rllayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/invoice_Rllayout0"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/invoicenumtxt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hedderview"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:text="#234567"
+                    android:textColor="@color/textcolor"
+
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/proplanbtntxt2"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/hedderview"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="18dp"
+                    android:background="@drawable/billbuttonbackground"
+                    android:gravity="center"
+                    android:text="Pro Plan"
+                    android:textColor="#219653"
+
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/invoice_Rllayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/invoice_Rllayout1"
+                android:layout_marginTop="32dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/billingdatetxt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hedderview"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/inter_light"
+                    android:layout_weight="1"
+                    android:text="Billing Date"
+                    android:textColor="#757F8E"
+
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/billingtxt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/inter_light"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="Billing Cycle"
+                    android:textColor="#757F8E"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/invoice_Rllayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/invoice_Rllayout2"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/billdatetxt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout4"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:text="20-11-2023"
+                    android:textColor="@color/textcolor"
+
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/billingmonthtxt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hedderview"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="Monthly"
+                    android:textColor="@color/textcolor"
+                    android:textSize="15dp"
+
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/invoice_Rllayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/invoice_Rllayout3"
+                android:layout_marginTop="32dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/expairydatetxt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout5"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter_light"
+                    android:text="expiry date"
+                    android:textColor="#757F8E"
+
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/plancosttxt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hedderview"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/inter_light"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="Plan Cost"
+                    android:textColor="#757F8E"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/invoice_Rllayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/invoice_Rllayout4"
+                android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/exp_datetxt2"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/layout13"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/expaireydate_buttonbackground"
+                    android:gravity="center"
+                    android:text="20/12/2023"
+                    android:textColor="@color/cnb_default_badge_color"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/plan_costtxt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hedderview"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="$5698"
+                    android:textColor="@color/textcolor"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/invoice_Rllayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/invoice_Rllayout5"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/upgradebtn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/buttonbackground"
+                    android:fontFamily="@font/poppins_thin"
+                    android:gravity="center"
+                    android:text="Upgrade"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

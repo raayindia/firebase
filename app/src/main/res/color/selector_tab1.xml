@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:color="@color/colorTab1Selected" />
+    <!-- Default state -->
+    <item android:color="@color/colorTab1Unselected" />
+    <item android:state_checked="true" android:color="@color/colortab2selected" />
+    <!-- Default state -->
+    <item android:color="@color/colorTab1Unselected" />
+    <item android:state_checked="true" android:color="@color/colortab3selected" />
+    <!-- Default state -->
+    <item android:color="@color/colorTab1Unselected" />
+</selector>

@@ -1,0 +1,53 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Home tab -->
+    <item android:state_checked="true" android:state_pressed="true">
+        <layer-list>
+            <item android:gravity="center">
+                <shape android:shape="oval">
+                    <corners android:radius="5dp"/>
+
+
+                    <size android:width="45dp" android:height="45dp" />
+                    <stroke android:width="3dp" android:color="#250665" />
+
+                </shape>
+            </item>
+        </layer-list>
+
+
+
+    </item>
+
+    <!-- Dashboard tab -->
+    <item android:state_checked="true" android:state_pressed="false">
+        <layer-list>
+            <item android:gravity="center">
+
+                <shape android:shape="rectangle">
+                    <corners android:radius="5dp"/>
+                    <solid android:color="#F4F2F8" />
+                    <size android:width="120dp" android:height="45dp" />
+<!--                    <stroke android:width="3dp" android:color="#7F58CD" /> &lt;!&ndash; Change the color for Dashboard tab &ndash;&gt;-->
+                </shape>
+
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Notifications tab -->
+<!--    <item android:state_checked="false">-->
+<!--        <layer-list>-->
+<!--            <item android:gravity="center">-->
+<!--                <shape android:shape="rectangle">-->
+<!--                    <corners android:radius="5dp"/>-->
+
+
+<!--                    <size android:width="85dp" android:height="45dp" />-->
+<!--                    <stroke android:width="3dp" android:color="#EAE010" />-->
+
+<!--                </shape>-->
+<!--            </item>-->
+<!--        </layer-list>-->
+<!--    </item>-->
+</selector>
+

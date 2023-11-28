@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchor="@+id/scrollView2"
+        app:layout_anchorGravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="welcome Telecaller"
+                android:id="@+id/welco"
+                android:textSize="24dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hellogdfbfbb"
+                android:layout_marginEnd="50dp"
+                android:textSize="28dp"
+                android:textColor="@color/black"
+                android:id="@+id/name"
+                android:gravity="center|end"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hellogdfbfbb"
+                android:layout_marginEnd="50dp"
+                android:layout_below="@+id/name"
+                android:id="@+id/role"
+                android:gravity="center|end">
+            </TextView>
+
+            <!-- Question 1 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How would you rate the cleanliness of the hospital?" />
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkboxcleanliness_excellent"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Excellent" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkboxcleanliness_good"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Good" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkboxcleanliness_fair"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Fair" />-->
+            <RadioGroup
+                android:id="@+id/rating1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextPassword"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp">
+
+
+                <RadioButton
+                    android:id="@+id/checkbox_admin"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:checked="false"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:padding="4dp"
+                    android:text="Excellent"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="16sp" />
+
+                <!--adding a radio button -->
+                <RadioButton
+                    android:id="@+id/cRB"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:checked="false"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:padding="4dp"
+                    android:text="Good"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="16sp" />
+
+                <!--adding a radio button -->
+                <RadioButton
+                    android:id="@+id/pythonRB"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:checked="false"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:padding="4dp"
+                    android:text="Fair"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+            <!-- Question 2 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How satisfied are you with the quality of care you received?" />
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkboxquality_excellent"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Excellent" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkboxquality_good"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Good" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkboxquality_fair"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Fair" />-->
+            <RadioGroup
+                android:id="@+id/rating2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextPassword"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp">
+
+
+                <RadioButton
+                    android:id="@+id/radiobtn4"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:checked="false"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:padding="4dp"
+                    android:text="Excellent"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="16sp" />
+
+                <!--adding a radio button -->
+                <RadioButton
+                    android:id="@+id/radiobtn5"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:checked="false"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:padding="4dp"
+                    android:text="Good"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="16sp" />
+
+                <!--adding a radio button -->
+                <RadioButton
+                    android:id="@+id/radiobtn6"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:checked="false"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:padding="4dp"
+                    android:text="Fair"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+            <!-- Question 3 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Were the hospital staff friendly and helpful?" />
+
+            <RadioGroup
+                android:id="@+id/rating3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextPassword"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp">
+
+
+                <RadioButton
+                    android:id="@+id/radiobtn7"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:checked="false"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:padding="4dp"
+                    android:text="no"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="16sp" />
+
+                <!--adding a radio button -->
+                <RadioButton
+                    android:id="@+id/radiobtn8"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:checked="false"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:padding="4dp"
+                    android:text="yes"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="16sp" />
+
+                <!--adding a radio button -->
+
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How would you rate the cleanliness of the hospital?" />
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkbox_cleanliness_excellent"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Excellent" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkbox_cleanliness_good"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Good" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkbox_cleanliness_fair"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Fair" />-->
+            <RadioGroup
+                android:id="@+id/rating4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextPassword"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp">
+
+
+                <RadioButton
+                    android:id="@+id/radiobtn9"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:checked="false"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:padding="4dp"
+                    android:text="Excellent"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="16sp" />
+
+                <!--adding a radio button -->
+                <RadioButton
+                    android:id="@+id/radiobtn10"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:checked="false"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:padding="4dp"
+                    android:text="Good"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="16sp" />
+
+                <!--adding a radio button -->
+                <RadioButton
+                    android:id="@+id/radiobtn11"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:checked="false"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:padding="4dp"
+                    android:text="Fair"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How satisfied are you with the quality of care you received?" />
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkbox_quality_excellent"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Excellent" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkbox_quality_good"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Good" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkbox_quality_fair"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Fair" />-->
+
+            <RadioGroup
+                android:id="@+id/rating5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextPassword"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp">
+
+
+                <RadioButton
+                    android:id="@+id/radiobtn12"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:checked="false"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:padding="4dp"
+                    android:text="Excellent"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="16sp" />
+
+                <!--adding a radio button -->
+                <RadioButton
+                    android:id="@+id/radiobtn13"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:checked="false"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:padding="4dp"
+                    android:text="Good"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="16sp" />
+
+                <!--adding a radio button -->
+                <RadioButton
+                    android:id="@+id/radiobtn14"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:checked="false"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:padding="4dp"
+                    android:text="Fair"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Were the hospital staff friendly and helpful?" />
+            <RadioGroup
+                android:id="@+id/rating6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextPassword"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp">
+
+
+                <RadioButton
+                    android:id="@+id/radiobtn15"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:checked="false"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:padding="4dp"
+                    android:text="no"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="16sp" />
+
+                <!--adding a radio button -->
+                <RadioButton
+                    android:id="@+id/radiobtn16"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:checked="false"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:padding="4dp"
+                    android:text="yes"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="16sp" />
+
+                <!--adding a radio button -->
+
+
+            </RadioGroup>
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkbox_staff_friendly_yes"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Yes" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkbox_staff_friendly_no"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="No" />-->
+
+            <!-- Question 4: Text Input -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please provide any additional comments or suggestions:" />
+
+            <EditText
+                android:id="@+id/edittext_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your comments here"
+                android:inputType="textMultiLine"
+                android:minLines="3" />
+
+            <!-- Question 5: Text Input -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What improvements would you suggest for the hospital?" />
+
+            <EditText
+                android:id="@+id/edittext_suggestions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your suggestions here"
+                android:inputType="textMultiLine"
+                android:minLines="3" />
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/submit"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:text="Submit"
+                android:scaleType="center"
+                android:textStyle="bold"
+                android:layout_below="@id/radioGroup"
+                android:gravity="center"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonbackground"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

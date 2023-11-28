@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:layout_below="@+id/role"
+        android:inputType="textPersonName"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:drawableStart="@drawable/people"
+        android:layout_marginEnd="32dp"
+        android:textColor="@color/black"
+        android:text="sandeep"
+        android:hint=" Name"
+        android:textColorHint="#D2D2D2"
+        android:background="@drawable/boarder1"
+        />
+
+
+
+
+    <EditText
+        android:id="@+id/editdesignation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:inputType="text"
+        android:text="receptionist"
+        android:layout_below="@id/editTextName"
+        android:drawableStart="@drawable/vector"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:hint=" Designation"
+        android:textColorHint="#D2D2D2"
+        android:background="@drawable/boarder1"
+        />
+
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/editmobilenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:layout_marginTop="30dp"
+        android:inputType="textPersonName"
+        android:text="8328227725"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:drawableStart="@drawable/vector__1_"
+        android:layout_below="@+id/editdesignation"
+        android:textColor="@color/black"
+        android:hint=" Phone number"
+        android:textColorHint="#D2D2D2"
+        android:background="@drawable/boarder1"
+        />
+
+
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/editemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="center"
+        android:inputType="textEmailAddress"
+        android:text="svsndpg@gmail.com"
+        android:layout_below="@+id/editmobilenumber"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/baseline_mail_outline_24"
+        android:hint=" Mail"
+        android:textColorHint="#D2D2D2"
+        android:background="@drawable/boarder1"
+        />
+
+
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addstafbutton"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:scaleType="center"
+        android:textStyle="bold"
+        android:layout_below="@+id/editemail"
+        android:gravity="center"
+        android:text="save"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/buttonbackground"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/updatebutton"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:scaleType="center"
+        android:textStyle="bold"
+        android:layout_below="@+id/addstafbutton"
+        android:gravity="center"
+        android:text="Updatestaf"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/buttonbackground"/>
+
+
+</RelativeLayout>
+</layout>

@@ -1,0 +1,26 @@
+<FrameLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:id="@+id/frameLayoutSwitch"
+    android:layout_centerVertical="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Border background -->
+    <View
+        android:id="@+id/borderView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_background" />
+
+    <!-- Circle TextView -->
+    <TextView
+        android:id="@+id/circleTextView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circle_background"
+        android:gravity="center"
+        android:text="Active"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+</FrameLayout>

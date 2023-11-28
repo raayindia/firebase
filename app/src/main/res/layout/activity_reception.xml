@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+
+
+
+    <Button
+        android:id="@+id/signOutButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/buttonbackground"
+        android:text="Sign out"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:inputType="textPersonName"
+        android:layout_below="@id/textViewName"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/black"
+        android:hint="Enter your name"
+        android:textColorHint="#D2D2D2"
+        android:background="@drawable/boarder1"
+        />
+
+
+    <TextView
+        android:id="@+id/textViewMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/editTextMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:inputType="phone"
+        android:layout_below="@id/textViewMobile"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/black"
+        android:hint="Enter your mobile number"
+        android:textColorHint="#D2D2D2"
+        android:background="@drawable/boarder1"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doctor Name"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_below="@id/editTextMobile"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:inputType="textPersonName"
+        android:layout_below="@id/textViewPassword"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/black"
+        android:hint="Enter Doctor Name"
+        android:textColorHint="#D2D2D2"
+        android:background="@drawable/boarder1"
+        />
+
+
+    <TextView
+        android:id="@+id/joindatetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="join date"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+
+
+
+
+    <EditText
+        android:id="@+id/dateofjoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:scaleType="center"
+        android:inputType="date"
+        android:layout_below="@id/joindatetxt"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:focusableInTouchMode="false"
+        android:textColor="@color/black"
+        android:hint="please enter joined date"
+        android:textColorHint="#D2D2D2"
+        android:background="@drawable/boarder1"
+        />
+
+    <TextView
+        android:id="@+id/dischargedatetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discharge date"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_below="@id/dateofjoin"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+
+
+    <EditText
+        android:id="@+id/dateofdischarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:padding="10dp"
+        android:focusable="false"
+        android:scaleType="center"
+        android:inputType="date"
+        android:layout_below="@id/dischargedatetxt"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:focusableInTouchMode="false"
+        android:textColor="@color/black"
+        android:hint="please enter discharge date"
+        android:textColorHint="#D2D2D2"
+        android:background="@drawable/boarder1"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerbutton"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:scaleType="center"
+        android:textStyle="bold"
+        android:layout_below="@id/dateofdischarge"
+        android:gravity="center"
+        android:text="save"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/buttonbackground"/>
+
+</RelativeLayout>

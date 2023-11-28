@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#D4DDEC"
+    android:clickable="true"
+    android:focusable="true">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="7dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="4dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        tools:ignore="MissingConstraints">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/base_cardview"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.511"
+            tools:layout_editor_absoluteX="-55dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rellayout"
+                android:layout_width="match_parent"
+                android:layout_height="84dp">
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:src="@drawable/img_3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    tools:ignore="MissingConstraints" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@+id/profile_image"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/product_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#1A4563"
+                        android:text="Ashok Kumar"
+                        android:textStyle="bold"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/designationdetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Junior Doctor"
+                        android:textColor="#757F8E"
+                        android:layout_below="@+id/product_name"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/delete_product"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/add_card"
+                    tools:ignore="NotSibling" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/hidden_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/rellayout"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    app:layout_constraintTop_toBottomOf="@+id/rellayout"
+                    android:background="#D4DDEB"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+                    <me.zhouzhuo.zzhorizontalprogressbar.ZzHorizontalProgressBar
+                        android:id="@+id/pb"
+                        android:layout_width="172dp"
+                        android:layout_height="20dp"
+                        app:zpb_padding="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="20dp"
+                        app:zpb_pb_color="#008000"
+                        app:zpb_bg_color="#E1DDDD"
+                        app:zpb_max="100"
+                        app:zpb_progress="20"
+                        />
+                    <ImageView
+                        android:id="@+id/delete"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/delete"
+                        android:layout_alignParentEnd="true"
+                        android:paddingRight="20dp"
+                        android:clickable="true" />
+</RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Phone Number"
+                        android:textStyle="bold"
+                        android:textColor="#1A4563"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/product_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Database"
+                        android:textColor="#000000"
+                        android:textSize="13dp" />
+                </LinearLayout>
+                <!-- Child LinearLayout 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Email ID"
+                        android:textStyle="bold"
+                        android:textColor="#1A4563"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Data Structures"
+                        android:textColor="#000000"
+                        android:textSize="13dp" />
+                </LinearLayout>
+                <!-- Child LinearLayout 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Password"
+                        android:textStyle="bold"
+                        android:textColor="#1A4563"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Operating"
+                        android:textColor="#000000"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/editbtn"
+                        android:layout_width="87dp"
+                        android:layout_height="37dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="MANAGE"
+                        android:background="@drawable/buttonbackground"
+                        android:backgroundTint="@color/selected_tab_color"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp" />
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardviewSwitch"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        app:cardMaxElevation="12dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txtcard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:padding="10dp"
+                                android:text="InActive"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+
+                            <Switch
+                                android:id="@+id/simpleSwitch"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/txtcard"
+                                android:checked="true"
+                                android:padding="0dp"
+                                android:scaleX="1"
+                                android:scaleY="1"
+                                android:textColor="#FA4848"
+                                android:textOff="Inactive"
+                                android:textOn="Active"
+                                android:thumb="@drawable/custom_switch"
+
+                                android:visibility="visible" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

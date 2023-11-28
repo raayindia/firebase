@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Add your profile information here -->
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile"
+            android:icon="@drawable/baseline_personicon" />
+        <!-- Add other menu items as needed -->
+    </group>
+</menu>

@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Hospital_Application" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimaryDark">@color/custom_color</item>
+
+
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Hospital_Application" parent="Theme.AppCompat.Light.DarkActionBar" />
+    <style name="AppTheme.AppBarOverlay" parent="Theme.AppCompat.Light.DarkActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="Theme.AppCompat.Light.DarkActionBar" />
+
+
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+        <item name="colorSurface">#d1e4ff</item>
+        <item name="colorSecondaryContainer">#0061a3</item>
+
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+
+    </style>
+
+</resources>
