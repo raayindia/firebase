@@ -355,7 +355,7 @@ TimeCheckSubscription()
                 finish();
             }
             .setNegativeButton(
-                "Cancel"
+                "Cancel..."
             ) { dialog, id -> dialog.cancel() }
         builder.show()
     }
