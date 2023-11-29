@@ -5,6 +5,7 @@ data class ControlItemModel(
     val text2: String,
     val isActive: Boolean
 
+
 )
 
 
