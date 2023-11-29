@@ -1,25 +1,15 @@
 package com.example.hospital_application.adapters
 
 import android.graphics.Color
-import android.util.Log
 import android.view.LayoutInflater
-import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.Animation
-import android.view.animation.TranslateAnimation
-import android.widget.FrameLayout
-import android.widget.ImageView
 import android.widget.Switch
 import android.widget.TextView
-import androidx.appcompat.widget.SwitchCompat
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.ControlItemModel
-import com.example.hospital_application.EditProductBottomSheetFragment.Companion.TAG
+import com.example.hospital_application.ControlItemModel
 import com.example.hospital_application.R
-import com.example.myswitchbutton.MyButtonParameter
-import com.example.myswitchbutton.MyButtonView
 
 class ControlItemAdapter(private val mList: List<ControlItemModel>) : RecyclerView.Adapter<ControlItemAdapter.ViewHolder>() {
     private val TAG = "MyAdapter"

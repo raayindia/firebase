@@ -146,15 +146,6 @@ class HomeFragment : Fragment(), ItemAdapter.ItemClickListener, OnStaffClick {
             addtitle.setText(R.string.addTitle)
         }
 
-        deleteIcon = view.findViewById(R.id.delete)
-        // Set an initial color for the delete icon (e.g., grey)
-        deleteIcon.setColorFilter(ContextCompat.getColor(requireContext(), R.color.disabled))
-
-        // Set an initial color for the delete icon (e.g., grey)
-        deleteIcon.setColorFilter(ContextCompat.getColor(requireContext(), R.color.disabled))
-        deleteIcon.setOnClickListener {
-            deleteStaffCards(selectedArrayList)
-        }
         return view
     }
 
@@ -468,6 +459,7 @@ class HomeFragment : Fragment(), ItemAdapter.ItemClickListener, OnStaffClick {
 
     override fun onDelete(model: DetailXX, current: ArrayList<String>) {
         selectedArrayList = current
+        deleteStaffCards(selectedArrayList)
         Toast.makeText(requireContext(), "" + selectedArrayList, Toast.LENGTH_SHORT).show()
     }
 

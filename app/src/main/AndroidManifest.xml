@@ -42,12 +42,6 @@
             android:name=".HospReceptionistActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginAccessActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.LoginActivity"
-            android:exported="false" />
-        <activity
             android:name=".welcomeActivity"
             android:exported="false" />
         <activity
@@ -122,7 +116,7 @@
             android:name=".RegistrationActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.LoginAccessActivity"
+            android:name=".LoginAccessActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

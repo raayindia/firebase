@@ -5,14 +5,16 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ProgressBar
-import android.widget.TextView
 import android.widget.Toast
-import androidx.core.content.ContentProviderCompat.requireContext
+import com.example.hospital_application.ApiClient
+import com.example.hospital_application.Api_Interface
+import com.example.hospital_application.LoginActivity
+import com.example.hospital_application.R
 import com.example.hospital_application.Responses.LogincheckResponse
+import com.example.hospital_application.VerifyOTPActivity
 import com.google.firebase.FirebaseException
 import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthOptions
@@ -130,4 +132,3 @@ class LoginAccessActivity : AppCompatActivity() {
         Toast.makeText(applicationContext, message, Toast.LENGTH_SHORT).show()
     }
 }
-

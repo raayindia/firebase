@@ -37,6 +37,7 @@
     <color name="selected_tab_color">#4894FE</color> <!-- Customize the color code -->
     <color name="unselected_tab_color">#757F8E</color>
     <color name="hint_color">#393737</color>
+    <color name="home_bg_color">#74B9F4</color>
 
     <color name="red_active">#f44336</color>
     <color name="purple_active">#9c27b0</color>

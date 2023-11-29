@@ -57,6 +57,7 @@
                         android:layout_marginTop="5dp"
                         android:textColor="#1A4563"
                         android:text="Ashok Kumar"
+                        android:fontFamily="@font/opensansbold"
                         android:textStyle="bold"
                         app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="parent"
@@ -67,6 +68,7 @@
                         android:layout_height="wrap_content"
                         android:padding="8dp"
                         android:text="Junior Doctor"
+                        android:fontFamily="@font/opensansregular"
                         android:textColor="#757F8E"
                         android:layout_below="@+id/product_name"
                         app:layout_constraintHorizontal_bias="1.0"
@@ -74,14 +76,14 @@
                 </RelativeLayout>
 
                 <ImageView
-                    android:id="@+id/delete_product"
+                    android:id="@+id/expand_product"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginRight="20dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/add_card"
+                    app:srcCompat="@drawable/ic_down_arrow"
                     tools:ignore="NotSibling" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -139,39 +141,15 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="20dp"
-                        android:text="Phone Number"
-                        android:textStyle="bold"
-                        android:textColor="#1A4563"
-                        android:textSize="14dp" />
-
-                    <TextView
                         android:id="@+id/product_phone"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
-                        android:text="Database"
-                        android:textColor="#000000"
-                        android:textSize="13dp" />
-                </LinearLayout>
-                <!-- Child LinearLayout 2 -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="20dp"
-                        android:text="Email ID"
+                        android:text="Phone Number : 99999999999"
+                        android:fontFamily="@font/opensanssemibold"
                         android:textStyle="bold"
-                        android:textColor="#1A4563"
+                        android:textColor="@color/textcolor"
                         android:textSize="14dp" />
 
                     <TextView
@@ -180,11 +158,12 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
-                        android:text="Data Structures"
-                        android:textColor="#000000"
+                        android:text="email : fad@gamil.com"
+                        android:fontFamily="@font/opensanssemibold"
+                        android:textColor="@color/textcolor"
                         android:textSize="13dp" />
                 </LinearLayout>
-                <!-- Child LinearLayout 3 -->
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -215,30 +194,28 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="2">
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/editbtn"
-                        android:layout_width="87dp"
-                        android:layout_height="37dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
                         android:layout_marginStart="20dp"
-                        android:layout_marginTop="20dp"
                         android:text="MANAGE"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/opensanssemibold"
                         android:background="@drawable/buttonbackground"
                         android:backgroundTint="@color/selected_tab_color"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/white"
                         android:textSize="14dp" />
                     <androidx.cardview.widget.CardView
                         android:id="@+id/cardviewSwitch"
-                        android:layout_width="120dp"
-                        android:layout_height="40dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginEnd="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                      android:padding="10dp"
+                        android:layout_weight="1"
                         android:layout_marginBottom="10dp"
                         app:cardCornerRadius="20dp"
                         app:cardElevation="10dp"
@@ -249,7 +226,6 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:gravity="center">
-
                             <TextView
                                 android:id="@+id/txtcard"
                                 android:layout_width="wrap_content"
@@ -257,6 +233,7 @@
                                 android:layout_centerVertical="true"
                                 android:padding="10dp"
                                 android:text="InActive"
+                                android:fontFamily="@font/opensanssemibold"
                                 android:textSize="12sp"
                                 android:textStyle="bold"
                                 android:visibility="visible" />
@@ -279,7 +256,7 @@
                                 android:visibility="visible" />
                         </RelativeLayout>
                     </androidx.cardview.widget.CardView>
-                    </RelativeLayout>
+
                 </LinearLayout>
 
             </LinearLayout>

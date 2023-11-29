@@ -53,10 +53,9 @@ class ProductListAdapter(
         val product = staffList[position]
 //        product.edit = "Edit"
         holder.productName.text = product.staffname
-        holder.productPhone.text =
-            Editable.Factory.getInstance().newEditable(product.staffphone.toString())
+        holder.productPhone.text = "Phone Number: "+product.staffphone.toString()
 //        holder.designation.text = product.staffdesignation.toString()
-        holder.email.text = product.staffemail
+        holder.email.text = "Email: "+product.staffemail
         val designationString = when (product.staffdesignation) {
             1 -> "Super Admin"
             2 -> "Admin"
@@ -91,20 +90,22 @@ class ProductListAdapter(
         }
 
         // Set a click listener for the lay2 layout
-        holder.productDelete.setOnClickListener {
+        holder.productExpand.setOnClickListener {
 
             // Check if the hiddenView is currently visible
             if (holder.hiddenView.visibility == View.VISIBLE) {
                 // If it's visible, hide it
                 holder.hiddenView.visibility = View.GONE
-                holder.productDelete.setImageResource(R.drawable.add_card)
+                holder.productExpand.setImageResource(R.drawable.ic_down_arrow)
             } else {
                 // If it's not visible, show it
                 holder.hiddenView.visibility = View.VISIBLE
-                holder.productDelete.visibility = View.VISIBLE
-                holder.productDelete.setImageResource(R.drawable.removecard)
+                holder.productExpand.visibility = View.VISIBLE
+                holder.productExpand.setImageResource(R.drawable.ic_up_arrow)
 
             }
+
+
 
 
         }
@@ -112,6 +113,10 @@ class ProductListAdapter(
 
         holder.editbutton.setOnClickListener {
             onStaffclick.onUpdate(product, true)
+        }
+        holder.delete.setOnClickListener {
+            myArrayList.add(product.staffid.toString())
+            onStaffclick.onDelete(product, myArrayList)
         }
 
 
@@ -126,8 +131,9 @@ class ProductListAdapter(
     inner class ProductViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val productName: TextView = itemView.findViewById(R.id.product_name)
         val productPhone: TextView = itemView.findViewById(R.id.product_phone)
-        val productDelete: ImageView = itemView.findViewById(R.id.delete_product)
+        val productExpand: ImageView = itemView.findViewById(R.id.expand_product)
         val designation: TextView = itemView.findViewById(R.id.designationdetails)
+        val delete: ImageView = itemView.findViewById(R.id.delete)
         val email: TextView = itemView.findViewById(R.id.email)
         val editbutton: AppCompatButton = itemView.findViewById(R.id.editbtn)
         val password: TextView = itemView.findViewById(R.id.password)
