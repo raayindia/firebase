@@ -155,6 +155,7 @@ class ProductListAdapter(
                 if (position != RecyclerView.NO_POSITION) {
                     val product = staffList[position]
                     // product.isChecked = isChecked
+
                 }
             }
         }
